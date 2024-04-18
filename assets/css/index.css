@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  background-color: transparent;
+}
+header .container {
+  width: 75%;
+  padding: 15px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .container nav ul {
+  display: flex;
+  list-style: none;
+  gap: 18px;
+}
+header .container nav ul a {
+  text-decoration: none;
+}
+
+#welcome {
+  width: 100%;
+  min-height: 650px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://preview.colorlib.com/theme/eatwell/images/bg_3.jpg");
+}
+#welcome .container {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#welcome .container .welcomeAbout {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+#welcome .container .welcomeAbout h1 {
+  font-size: 75px;
+  color: #fff;
+}
+#welcome .container .welcomeAbout p {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 300;
+}
+
+.ourStory {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ourStory .container {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0;
+  margin: 30px 0;
+}
+.ourStory .container img {
+  width: 50%;
+}
+.ourStory .container .ourStoryText {
+  width: 41%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.ourStory .container .ourStoryText span {
+  font-size: 16px;
+  color: #b8b8b8;
+}
+.ourStory .container .ourStoryText h1 {
+  font-size: 37px;
+  color: white;
+}
+
+@media screen and (min-width: 300px) and (max-width: 991px) {
+  header .container nav {
+    display: none;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 768px) {
+  #welcome .container .welcomeAbout h1 {
+    font-size: 37px;
+  }
+  .ourStory .container {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .ourStory .container img {
+    width: 100%;
+  }
+  .ourStory .container .ourStoryText {
+    width: 100%;
+  }
+}
